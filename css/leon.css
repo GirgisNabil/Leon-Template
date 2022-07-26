@@ -376,14 +376,6 @@ a {
   left: -16px;
 }
 
-.weirdimages1::before {
-  content: "";
-  position: absolute;
-  height: 340px;
-  width: 300px;
-  background-color: #efefef;
-  z-index: 2;
-}
 .weirdimages2 {
   position: relative;
   z-index: -1;
@@ -414,14 +406,18 @@ a {
     gap: 160px;
     align-items: center;
   }
-  .weirdimages1 {
-    transform: translateX(-30px);
-  }
-  .weirdimages2 {
-    transform: translateX(-30px);
-  }
+
   .weirdimages1::before {
-    left: 22px;
+    display: none;
+  }
+  .weirdimages1::after {
+    display: none;
+  }
+  .weirdimages2::before {
+    display: none;
+  }
+  .weirdimages2::after {
+    display: none;
   }
   .about-content h3 {
     text-align: center;
@@ -515,3 +511,4 @@ a {
   }
 }
 /*End footer*/
+
